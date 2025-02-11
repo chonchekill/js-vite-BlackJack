@@ -2,11 +2,11 @@
 /**
  * 
  * @param {String} carta 
- * @returns {HTMLElement} 
+ * @returns {HTMLElement} //Imagen de retorno
  */
 export const crearCartaHTML = (carta) => {
 
-    if (!carta) throw new error ('La carta no fue enviada');
+    if (!carta) throw new error ('La carta es un argumento obligatorio');
     
     const imgCarta = document.createElement('img');
     imgCarta.src = `assets/cartas/${ carta }.png`; //3H, JD

@@ -20,15 +20,6 @@ const puntosHTML = document.querySelectorAll('small');
 
 deck = crearDeck(tipos,especiales);
 
-
-// Esta función me permite tomar una carta
-
-
-// pedirCarta();
-
-// turno de la computadora
-
-
 // Eventos
 btnPedir.addEventListener('click', () => {
 
@@ -40,7 +31,7 @@ btnPedir.addEventListener('click', () => {
     // <img class="carta" src="assets/cartas/2C.png">
     
     divCartasJugador.append( crearCartaHTML(carta));
-    
+
     if ( puntosJugador > 21 ) {
         console.warn('Lo siento mucho, perdiste');
         btnPedir.disabled   = true;
